@@ -26,7 +26,7 @@ The platform is built around a modular ETL architecture that separates data inge
 ## Links
 
 - **GitHub Repository:** [Insert GitHub Repository Link]
-- **Scrum Board:** [Insert GitHub Projects / Trello / Jira Link]
+- **Scrum Board:** [CodeSync Scrum Board](https://github.com/users/Chol-Mach-Kuol/projects/2/views/1?layout_template=board)
 - **Architecture Diagram:** [Insert diagrams.net Link]
 
 ---
