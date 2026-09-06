@@ -23,11 +23,14 @@
 | 1 | GitHub repo created | Chol Mach | ✅ Done |
 | 2 | All teammates invited as collaborators | Chol Mach | ⚠️ Pending |
 | 3 | README has team name + all members | Chol Mach | ✅ Done |
-| 4 | Architecture diagram created and committed as `docs/architecture.png` | All (Chol Mach commits) | ❌ Not done |
-| 5 | Architecture diagram link added to README | Chol Mach | ❌ Not done |
-| 6 | Scrum board created with To Do, In Progress, Done columns | All | ❌ Not done |
-| 7 | At least 3 tasks added to Scrum board | All | ❌ Not done |
-| 8 | Scrum board link added to README | Chol Mach | ❌ Not done |
+| 4 | Accept GitHub collaborator invite | Alier, Kuol, Abay | ⚠️ Pending |
+| 5 | Clone the repo and confirm it works | Alier, Kuol, Abay | ⚠️ Pending |
+| 6 | Architecture diagram created | All together | ❌ Not done |
+| 7 | Architecture diagram committed as `docs/architecture.png` | Chol Mach | ❌ Not done |
+| 8 | Architecture diagram link added to README | Chol Mach | ❌ Not done |
+| 9 | Scrum board created with To Do, In Progress, Done columns | Chol Mach | ❌ Not done |
+| 10 | Tasks added to Scrum board | All together | ❌ Not done |
+| 11 | Scrum board link added to README | Chol Mach | ❌ Not done |
 
 ---
 
@@ -43,7 +46,58 @@
 
 ---
 
-## TASK 2 — Architecture Diagram (Everyone contributes, Chol Mach commits)
+## TASK 1b — Accept Invite + Clone Repo (Alier, Kuol, Abay)
+
+### Step 1 — Accept the collaborator invite
+1. Check your email (`a.piel@alustudent.com` / `k.kuol@alustudent.com` / `a.tessema@alustudent.com`)
+2. Open the email from GitHub titled **"You've been invited to collaborate"
+3. Click **Accept invitation**
+
+### Step 2 — Clone the repo
+```bash
+git clone https://github.com/Chol-Mach-Kuol/codesync-momo-analytics.git
+cd codesync-momo-analytics
+```
+
+### Step 3 — Set up your environment
+```bash
+python -m venv venv
+source venv/bin/activate       # Mac/Linux
+# venv\Scripts\activate        # Windows
+pip install -r requirements.txt
+cp .env.example .env
+```
+
+### Step 4 — Create your branch
+```bash
+# Alier runs:
+git checkout -b feature/etl-processing
+
+# Kuol runs:
+git checkout -b feature/database-api
+
+# Abay runs:
+git checkout -b feature/frontend-dashboard
+```
+
+### Step 5 — Confirm it works
+```bash
+# You should see all the project folders
+ls
+# README.md  requirements.txt  etl/  api/  web/  data/  tests/  scripts/  docs/
+```
+
+That's all for this week. Your code files will be added in the coming weeks.
+
+---
+
+## TASK 2 — Architecture Diagram (All together, Chol Mach commits)
+
+### Everyone's role in this task
+- **Chol Mach** — creates the diagram, exports it, commits it to the repo, updates README
+- **Alier** — reviews the ETL layers (Ingestion, Transformation, Classification) and confirms they are correct
+- **Kuol** — reviews the Database and API layers and confirms they are correct
+- **Abay** — reviews the Presentation layer and confirms it is correct
 
 ### Step 1 — Create the diagram
 1. Go to [https://app.diagrams.net](https://app.diagrams.net)
@@ -144,7 +198,13 @@ With your actual diagrams.net share link.
 
 ---
 
-## TASK 3 — Scrum Board (Everyone adds tasks, Chol Mach shares link)
+## TASK 3 — Scrum Board (All together, Chol Mach creates, everyone adds tasks)
+
+### Everyone's role in this task
+- **Chol Mach** — creates the board, adds columns, shares the link, updates README
+- **Alier** — adds tasks related to ETL (XML parser, data cleaning, categorization)
+- **Kuol** — adds tasks related to database and API (schema, endpoints)
+- **Abay** — adds tasks related to frontend (dashboard design, charts)
 
 ### Step 1 — Create the board
 1. Go to `https://github.com/Chol-Mach-Kuol/codesync-momo-analytics`
@@ -206,17 +266,37 @@ git push origin main
 
 ## Final Checklist Before Submitting Monday 8am
 
+**Chol Mach**
 - [ ] GitHub repository exists at `https://github.com/Chol-Mach-Kuol/codesync-momo-analytics`
-- [ ] All 3 teammates accepted collaborator invites
+- [ ] All 3 teammates invited as collaborators
 - [ ] README has team name **CodeSync**
 - [ ] README has all 4 member names and emails
-- [ ] `docs/architecture.png` exists in the repo
-- [ ] Architecture diagram clearly shows data flow
-- [ ] Architecture diagram link is in README
-- [ ] Scrum board exists with To Do, In Progress, Done columns
-- [ ] At least 3 tasks are on the board
-- [ ] Scrum board link is in README
-- [ ] GitHub repository link is ready to submit on Canvas
+- [ ] `docs/architecture.png` committed to the repo
+- [ ] Architecture diagram link added to README
+- [ ] Scrum board created with To Do, In Progress, Done columns
+- [ ] Scrum board link added to README
+- [ ] GitHub repository link submitted on Canvas
+
+**Alier Akuang**
+- [ ] Accepted GitHub collaborator invite
+- [ ] Cloned the repo successfully
+- [ ] Created branch `feature/etl-processing`
+- [ ] Reviewed ETL layers on the architecture diagram
+- [ ] Added ETL tasks to the Scrum board
+
+**Kuol Akech**
+- [ ] Accepted GitHub collaborator invite
+- [ ] Cloned the repo successfully
+- [ ] Created branch `feature/database-api`
+- [ ] Reviewed Database and API layers on the architecture diagram
+- [ ] Added database/API tasks to the Scrum board
+
+**Abay Mulat**
+- [ ] Accepted GitHub collaborator invite
+- [ ] Cloned the repo successfully
+- [ ] Created branch `feature/frontend-dashboard`
+- [ ] Reviewed Presentation layer on the architecture diagram
+- [ ] Added frontend tasks to the Scrum board
 
 ---
 
