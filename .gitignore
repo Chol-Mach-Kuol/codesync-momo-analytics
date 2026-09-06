@@ -1,0 +1,14 @@
+# Raw MoMo data (may contain sensitive transaction info)
+data/raw/
+data/db.sqlite3
+data/logs/
+
+# Environment
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
