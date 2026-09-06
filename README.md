@@ -25,7 +25,7 @@ The platform is built around a modular ETL architecture that separates data inge
 
 ## Links
 
-- **GitHub Repository:** [Insert GitHub Repository Link]
+- **GitHub Repository:** [codesync-momo-analytics](https://github.com/Chol-Mach-Kuol/codesync-momo-analytics)
 - **Scrum Board:** [CodeSync Scrum Board](https://github.com/users/Chol-Mach-Kuol/projects/2/views/1?layout_template=board)
 - **Architecture Diagram:** [View Architecture Diagram](https://drive.google.com/file/d/1tSsQaD1I0xgPR9MBEjZNQR-mNT5HOPkO/view?usp=sharing)
 
