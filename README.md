@@ -2,7 +2,7 @@
 
 ## Team
 
-**Team Name:** MindForge
+**Team Name:** CodeSync
 
 ## Project Description
 

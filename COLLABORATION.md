@@ -1,4 +1,4 @@
-# MindForge — Team Collaboration Guide
+# CodeSync — Team Collaboration Guide
 
 > One document for all 4 members. Read your section, follow the steps in order, and never push directly to `main`.
 
