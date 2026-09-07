@@ -10,11 +10,13 @@ async function loadDashboard() {
 function renderKPIs(kpis) {
   const section = document.getElementById("kpis");
   section.innerHTML = Object.entries(kpis)
-    .map(([label, value]) => `
+    .map(
+      ([label, value]) => `
       <div class="kpi-card">
         <h3>${label}</h3>
         <p>${value}</p>
-      </div>`)
+      </div>`,
+    )
     .join("");
 }
 
@@ -24,9 +26,26 @@ function renderCategoryChart(categories) {
   new Chart(canvas, {
     type: "doughnut",
     data: {
-      labels: categories.map(c => c.name),
-      datasets: [{ data: categories.map(c => c.count) }]
-    }
+      labels: categories.map((c) => c.name),
+      datasets: [
+        {
+          data: categories.map((c) => c.count),
+          backgroundColor: [
+            "#2563eb",
+            "#0d9488",
+            "#7c3aed",
+            "#16a34a",
+            "#ea580c",
+            "#0f172a",
+          ],
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        legend: { position: "bottom" },
+      },
+    },
   });
 }
 

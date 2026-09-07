@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: system-ui, sans-serif;
@@ -30,10 +34,23 @@ main {
   background: white;
   border-radius: 8px;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.kpi-card h3 { font-size: 0.85rem; color: #64748b; margin-bottom: 0.5rem; }
-.kpi-card p  { font-size: 1.75rem; font-weight: 700; color: #2563eb; }
+.kpi-card h3 {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
 
-canvas { background: white; border-radius: 8px; padding: 1rem; }
+.kpi-card p {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+canvas {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
